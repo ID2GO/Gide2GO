@@ -18,10 +18,9 @@ package eu.id2go.dictionary2go;
 
 public class FamilyActivity extends AbstractWordActivity {
 
+    // Create a list of words
     protected void addWord() {
 
-
-        // Create a list of words
         words.add(new Word("father", "әpә", R.drawable.family_father, R.raw.family_father));
         words.add(new Word("mother", "әṭa", R.drawable.family_mother, R.raw.family_mother));
         words.add(new Word("son", "angsi", R.drawable.family_son, R.raw.family_son));

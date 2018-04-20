@@ -18,10 +18,10 @@ package eu.id2go.dictionary2go;
 
 public class ColorsActivity extends AbstractWordActivity {
 
+
+    // Create a list of words
     protected void addWord() {
 
-
-        // Create a list of words
         words.add(new Word("red", "weṭeṭṭi", R.drawable.color_red, R.raw.color_red));
         words.add(new Word("mustard yellow", "chiwiiṭә", R.drawable.color_mustard_yellow, R.raw
                 .color_mustard_yellow));
