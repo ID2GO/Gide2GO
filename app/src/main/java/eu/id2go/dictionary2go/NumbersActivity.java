@@ -41,6 +41,6 @@ public class NumbersActivity extends AbstractWordActivity {
 
     @Override
     protected int getBackgroundColor() {
-        return R.color.category_colors;
+        return R.color.category_numbers;
     }
 }
