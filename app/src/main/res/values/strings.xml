@@ -32,4 +32,7 @@
     <string name="album_image">Word image</string>
     <!--String for Play button-->
     <string name="play_pause">II / ></string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
 </resources>
