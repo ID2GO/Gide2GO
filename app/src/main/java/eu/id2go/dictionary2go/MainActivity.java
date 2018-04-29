@@ -17,6 +17,7 @@
 package eu.id2go.dictionary2go;
 
 import android.os.Bundle;
+import android.support.design.widget.TabLayout;
 import android.support.v7.app.AppCompatActivity;
 
 public class MainActivity extends AppCompatActivity {
@@ -31,58 +32,13 @@ public class MainActivity extends AppCompatActivity {
         android.support.v4.view.ViewPager viewPager = findViewById(R.id.viewpager);
 
         // Create an adapter that knows which fragment should be shown on each page
-        SimpleFragmentPagerAdapter adapter = new SimpleFragmentPagerAdapter(getSupportFragmentManager());
+        SimpleFragmentPagerAdapter adapter = new SimpleFragmentPagerAdapter
+                (getSupportFragmentManager(), this);
 
         // Set the adapter onto the view pager
         viewPager.setAdapter(adapter);
+        TabLayout tabLayout = findViewById(R.id.sliding_tabs);
+        tabLayout.setupWithViewPager(viewPager);
     }
-//        // Find the View that shows the numbers category
-//        TextView numbers = findViewById(R.id.numbers);
-//        TextView family = findViewById(R.id.family);
-//        TextView colors = findViewById(R.id.colors);
-//        TextView phrases = findViewById(R.id.phrases);
-//
-//
-//        // Set a click listener on that View
-//        numbers.setOnClickListener(new View.OnClickListener() {
-//            // The code in this method will be executed when the numbers category is clicked on.
-//            @Override
-//            public void onClick(View view) {
-//                // Create a new intent to open the {@link NumbersActivity}
-//                Intent numbersIntent = new Intent(MainActivity.this, NumbersActivity.class);
-//                // Start the new activity
-//                startActivity(numbersIntent);
-//            }
-//        });
-//
-//
-//        family.setOnClickListener(new View.OnClickListener() {
-//            // The code in this method will be executed when the family category is clicked on.
-//            @Override
-//            public void onClick(View view) {
-//                Intent familyIntent = new Intent(MainActivity.this, FamilyActivity.class);
-//                startActivity(familyIntent);
-//            }
-//        });
-//
-//
-//        colors.setOnClickListener(new View.OnClickListener() {
-//            // The code in this method will be executed when the colors category is clicked on.
-//            @Override
-//            public void onClick(View view) {
-//                Intent colorsIntent = new Intent(MainActivity.this, ColorsActivity.class);
-//                startActivity(colorsIntent);
-//            }
-//        });
-//
-//
-//        phrases.setOnClickListener(new View.OnClickListener() {
-//            // The code in this method will be executed when the phrases category is clicked on.
-//            @Override
-//            public void onClick(View view) {
-//                Intent phrasesIntent = new Intent(MainActivity.this, PhrasesActivity.class);
-//                startActivity(phrasesIntent);
-//            }
-//        });
-//    }
+
 }
