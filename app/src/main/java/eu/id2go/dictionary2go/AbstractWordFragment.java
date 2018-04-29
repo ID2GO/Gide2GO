@@ -1,16 +1,14 @@
 package eu.id2go.dictionary2go;
 
 
-
+import android.content.Context;
+import android.media.AudioManager;
+import android.media.MediaPlayer;
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-
-import android.content.Context;
-import android.media.AudioManager;
-import android.media.MediaPlayer;
 import android.widget.AdapterView;
 import android.widget.ListView;
 
@@ -77,7 +75,7 @@ public abstract class AbstractWordFragment extends Fragment {
                              Bundle savedInstanceState) {
         View rootView = inflater.inflate(getFragmentId(),container,false);
 //        super.onCreate(savedInstanceState);
-
+        words = new ArrayList<>();
         addWord();
 
         // Create an {@link ArrayAdapter}, whose data source is a list of Strings. The
