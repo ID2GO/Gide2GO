@@ -13,7 +13,7 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package eu.id2go.dictionary2go;
+package eu.id2go.guide2go;
 
 
 /**
@@ -23,25 +23,21 @@ package eu.id2go.dictionary2go;
 public class Word {
 
     /**
+     * Constant value that represents no image was provided for this word
+     */
+    private static final int NO_IMAGE_PROVIDED = -1;
+    /**
      * Default translation for the word
      */
     private String mDefaultTranslation;
-
     /**
      * Miwok translation for the word
      */
     private String mMiwokTranslation;
-
     /**
      * Image resource ID for the word
      */
     private int mImageResourceId = NO_IMAGE_PROVIDED;
-
-    /**
-     * Constant value that represents no image was provided for this word
-     */
-    private static final int NO_IMAGE_PROVIDED = -1;
-
     private int mAudioResourceId;
 
     /**

@@ -1,4 +1,4 @@
-package eu.id2go.dictionary2go;
+package eu.id2go.guide2go;
 
 
 import android.support.v4.app.Fragment;
@@ -13,7 +13,7 @@ public class PhrasesFragment extends AbstractWordFragment {
         // Required empty public constructor
     }
 
-  // Create a list of words
+    // Create a list of words
     protected void addWord() {
         words.add(new Word("Where are you going?", "minto wuksus", R.raw.phrase_where_are_you_going));
         words.add(new Word("What is your name?", "tinnә oyaase'nә", R.raw.phrase_what_is_your_name));

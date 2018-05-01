@@ -14,7 +14,7 @@
     limitations under the License.
     -->
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="eu.id2go.dictionary2go">
+    package="eu.id2go.guide2go">
 
     <application
         android:allowBackup="true"
@@ -24,7 +24,7 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
         <activity
-            android:name=".MainActivity"
+            android:name="eu.id2go.guide2go.MainActivity"
             android:theme="@style/AppTheme">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />

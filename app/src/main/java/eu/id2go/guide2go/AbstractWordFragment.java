@@ -1,4 +1,4 @@
-package eu.id2go.dictionary2go;
+package eu.id2go.guide2go;
 
 
 import android.content.Context;
@@ -20,14 +20,9 @@ import java.util.ArrayList;
 public abstract class AbstractWordFragment extends Fragment {
 
     public ArrayList<Word> words = new ArrayList<>();
-
-    protected abstract void addWord();
-
-    protected abstract int getFragmentId();
-
-    protected abstract int getBackgroundColor();
-
-    /** Handles playback of all the sound files */
+    /**
+     * Handles playback of all the sound files
+     */
     protected MediaPlayer mMediaPlayer;
     private AudioManager mAudioManager;
     private AudioManager.OnAudioFocusChangeListener mAudioFocusChange = new AudioManager.OnAudioFocusChangeListener() {
@@ -53,9 +48,10 @@ public abstract class AbstractWordFragment extends Fragment {
         }
     };
     /**
-     +     * This listener gets triggered when the {@link MediaPlayer} has completed
-     +     * playing the audio file.
-     +     */
+     * +     * This listener gets triggered when the {@link MediaPlayer} has completed
+     * +     * playing the audio file.
+     * +
+     */
     private MediaPlayer.OnCompletionListener mCompletionListener = new MediaPlayer.OnCompletionListener() {
         @Override
         public void onCompletion(MediaPlayer mediaPlayer) {
@@ -64,16 +60,20 @@ public abstract class AbstractWordFragment extends Fragment {
         }
     };
 
-
     public AbstractWordFragment() {
         // Required empty public constructor
     }
 
+    protected abstract void addWord();
+
+    protected abstract int getFragmentId();
+
+    protected abstract int getBackgroundColor();
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
-        View rootView = inflater.inflate(getFragmentId(),container,false);
+        View rootView = inflater.inflate(getFragmentId(), container, false);
 //        super.onCreate(savedInstanceState);
         words = new ArrayList<>();
         addWord();
@@ -126,7 +126,6 @@ public abstract class AbstractWordFragment extends Fragment {
         listView.setAdapter(itemsAdapter);
         return rootView;
     }
-
 
 
     @Override

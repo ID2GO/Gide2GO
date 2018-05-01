@@ -1,8 +1,8 @@
-package eu.id2go.dictionary2go;
+package eu.id2go.guide2go;
 
 import org.junit.Test;
 
-import static org.junit.Assert.*;
+import static org.junit.Assert.assertEquals;
 
 /**
  * Example local unit test, which will execute on the development machine (host).

@@ -14,7 +14,7 @@
 -->
 <resources>
     <!-- Title for the application. [CHAR LIMIT=12] -->
-    <string name="app_name">Dictionary 2 GO</string>
+    <string name="app_name">Guide 2 GO</string>
 
     <!-- Category name for phrases [CHAR LIMIT=20] -->
     <string name="category_phrases">Phrases</string>

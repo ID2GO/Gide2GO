@@ -14,7 +14,7 @@
  * limitations under the License.
  */
 
-package eu.id2go.dictionary2go;
+package eu.id2go.guide2go;
 
 import android.os.Bundle;
 import android.support.design.widget.TabLayout;

@@ -1,4 +1,4 @@
-package eu.id2go.dictionary2go;
+package eu.id2go.guide2go;
 
 
 import android.support.v4.app.Fragment;
@@ -11,6 +11,7 @@ public class NumbersFragment extends AbstractWordFragment {
     public NumbersFragment() {
         // Required empty public constructor
     }
+
     // Create a list of words
     protected void addWord() {
         words.add(new Word("one", "lutti", R.drawable.number_one, R.raw.number_one));

@@ -1,13 +1,7 @@
-package eu.id2go.dictionary2go;
+package eu.id2go.guide2go;
 
 
-
-import android.os.Bundle;
 import android.support.v4.app.Fragment;
-import android.view.LayoutInflater;
-import android.view.View;
-import android.view.ViewGroup;
-import android.widget.TextView;
 
 /**
  * A simple {@link Fragment} subclass.
@@ -19,7 +13,7 @@ public class FamilyFragment extends AbstractWordFragment {
         // Required empty public constructor
     }
 
-  // Create a list of words
+    // Create a list of words
     protected void addWord() {
 
         words.add(new Word("father", "әpә", R.drawable.family_father, R.raw.family_father));
