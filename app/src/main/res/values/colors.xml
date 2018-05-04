@@ -15,10 +15,10 @@
 -->
 <resources>
     <!-- Primary color of the app (shown in the app bar) -->
-    <color name="primary_color">#4A312A</color>
+    <color name="primary_color">#3f51b5</color>
 
     <!-- Primary dark color of the app (shown in the status bar) -->
-    <color name="primary_dark_color">#2F1D1A</color>
+    <color name="primary_dark_color">#080c2c</color>
 
     <!-- Background color for app -->
     <color name="tan_background">#fff7da</color>
@@ -36,5 +36,8 @@
     <color name="category_phrases">#16AFCA</color>
 
     <color name="color_white_semitransparent">#33FFFFFF</color>
+    <color name="accent_material_light">#619be2</color>
+    <color name="background_material_light">#ffffff</color>
+    <color name="text_color_secondary">#a0ffff33</color>
 
 </resources>

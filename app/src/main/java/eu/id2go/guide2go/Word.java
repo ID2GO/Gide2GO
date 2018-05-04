@@ -18,7 +18,7 @@ package eu.id2go.guide2go;
 
 /**
  * {@link Word} represents a vocabulary word that the user wants to learn.
- * It contains a default translation, a Miwok translation, and an image for that word.
+ * It contains a default object, an Object Description, and an image for that word.
  */
 public class Word {
 
@@ -29,11 +29,11 @@ public class Word {
     /**
      * Default translation for the word
      */
-    private String mDefaultTranslation;
+    private String mTouristicObject;
     /**
-     * Miwok translation for the word
+     * Object Description for the word
      */
-    private String mMiwokTranslation;
+    private String mObjectDescription;
     /**
      * Image resource ID for the word
      */
@@ -43,30 +43,31 @@ public class Word {
     /**
      * Create a new Word object.
      *
-     * @param defaultTranslation is the word in a language that the user is already familiar with
+     * @param touristicObject is the word in a language that the user is already familiar with
      *                           (such as English)
-     * @param miwokTranslation   is the word in the Miwok language
+     * @param objectDescription  is the word in the word array list
      */
-    public Word(String defaultTranslation, String miwokTranslation, int audioResourceId) {
-        mDefaultTranslation = defaultTranslation;
-        mMiwokTranslation = miwokTranslation;
+    public Word(String touristicObject, String objectDescription, int audioResourceId) {
+        mTouristicObject = touristicObject;
+        mObjectDescription = objectDescription;
         mAudioResourceId = audioResourceId;
     }
 
     /**
      * Create a new Word object.
      *
-     * @param defaultTranslation is the word in a language that the user is already familiar with
+     * @param touristicObject is the word in a language that the user is already familiar with
      *                           (such as English)
-     * @param miwokTranslation   is the word in the Miwok language
+     * @param objectDescription   is the word in the Description array
      * @param imageResourceId    is the drawable resource ID for the image associated with the word
      * @param audioResourceId    is the drawable resource ID for the audio file associated with
      *                           the word
      */
-    public Word(String defaultTranslation, String miwokTranslation, int imageResourceId, int
+    public Word(String touristicObject, String objectDescription, int imageResourceId,
+                int
             audioResourceId) {
-        mDefaultTranslation = defaultTranslation;
-        mMiwokTranslation = miwokTranslation;
+        mTouristicObject = touristicObject;
+        mObjectDescription = objectDescription;
         mImageResourceId = imageResourceId;
         mAudioResourceId = audioResourceId;
     }
@@ -74,15 +75,15 @@ public class Word {
     /**
      * Get the default translation of the word.
      */
-    public String getDefaultTranslation() {
-        return mDefaultTranslation;
+    public String getTouristicObject() {
+        return mTouristicObject;
     }
 
     /**
-     * Get the Miwok translation of the word.
+     * Get the Description translation of the word array TouristicObject.
      */
-    public String getMiwokTranslation() {
-        return mMiwokTranslation;
+    public String getObjectDescription() {
+        return mObjectDescription;
     }
 
     /**
@@ -103,13 +104,5 @@ public class Word {
         return mAudioResourceId;
     }
 
-//    @Override
-//    public String toString() {
-//        return "Word{" +
-//                "mDefaultTranslation='" + mDefaultTranslation + '\'' +
-//                ", mMiwokTranslation='" + mMiwokTranslation + '\'' +
-//                ", mImageResourceId=" + mImageResourceId +
-//                ", mAudioResourceId=" + mAudioResourceId +
-//                '}';
-//    }
+
 }

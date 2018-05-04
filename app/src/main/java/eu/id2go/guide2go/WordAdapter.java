@@ -68,15 +68,18 @@ public class WordAdapter extends ArrayAdapter<Word> {
         // Get the {@link Word} object located at this position in the list
         Word currentWord = getItem(position);
 
-        // Find the TextViews & ImageView in the list_item.xml layout with the ID miwok_text_view.
-        TextView miwokTextView = listViewItem.findViewById(R.id.miwok_text_view);
-        TextView defaultTextView = listViewItem.findViewById(R.id.default_text_view);
+        // Find the TextViews & ImageView in the list_item.xml layout with the ID
+        // description_text_view.
+        TextView descriptionTextView = listViewItem.findViewById(R.id.description_text_view);
+        TextView touristicTextView = listViewItem.findViewById(R.id.touristic_text_view);
         ImageView imageView = listViewItem.findViewById(R.id.image);
 
-        // Get the Miwok word & the translation from the currentWord object and set this text on
-        // the Miwok TextView.
-        miwokTextView.setText(currentWord.getMiwokTranslation());
-        defaultTextView.setText(currentWord.getDefaultTranslation());
+        // Get the Object Description word & the translation from the currentWord object and set
+        // this
+        // text on
+        // the Object Description TextView.
+        descriptionTextView.setText(currentWord.getObjectDescription());
+        touristicTextView.setText(currentWord.getTouristicObject());
 
         // Check if an image is provided for this word or not
         if (currentWord.hasImage()) {

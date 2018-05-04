@@ -25,7 +25,8 @@ import android.support.v4.app.FragmentPagerAdapter;
  * Provides the appropriate {@link Fragment} for a view pager.
  */
 public class SimpleFragmentPagerAdapter extends FragmentPagerAdapter {
-    private String[] tabTitles = new String[]{"Numbers", "Family", "Colors", "Phrases"};
+    private String[] tabTitles = new String[]{"Festivity", "Restaurants",
+            "Museums", "Shopping"};
     private Context context;
 
     public SimpleFragmentPagerAdapter(FragmentManager fm, Context context) {
@@ -36,13 +37,13 @@ public class SimpleFragmentPagerAdapter extends FragmentPagerAdapter {
     @Override
     public Fragment getItem(int position) {
         if (position == 0) {
-            return new NumbersFragment();
+            return new FestivityFragment();
         } else if (position == 1) {
-            return new FamilyFragment();
+            return new RestaurantsFragment();
         } else if (position == 2) {
-            return new ColorsFragment();
+            return new MuseumsFragment();
         } else {
-            return new PhrasesFragment();
+            return new ShoppingFragment();
         }
     }
 
