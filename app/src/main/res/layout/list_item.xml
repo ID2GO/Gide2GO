@@ -66,6 +66,7 @@
                     android:layout_height="0dp"
                     android:layout_weight="1"
                     android:gravity="top"
+                    android:isScrollContainer="true"
                     android:textAppearance="?android:textAppearanceMedium"
                     android:textColor="@android:color/white"
                     tools:text="one" />
