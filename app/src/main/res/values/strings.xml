@@ -14,25 +14,16 @@
 -->
 <resources>
     <!-- Title for the application. [CHAR LIMIT=12] -->
-    <string name="app_name">Guide 2 GO</string>
-
-    <!-- Category name for phrases [CHAR LIMIT=20] -->
-    <string name="category_phrases">Phrases</string>
-
-    <!-- Category name for the vocabulary words for colors [CHAR LIMIT=20] -->
-    <string name="category_colors">Colors</string>
-
-    <!-- Category name for the vocabulary words for numbers [CHAR LIMIT=20] -->
-    <string name="category_numbers">Numbers</string>
-
-    <!-- Category name for the vocabulary words for family members [CHAR LIMIT=20] -->
-    <string name="category_family">Family Members</string>
-
-    <!--String for Album image-->
-    <string name="album_image">Word image</string>
+    <string name="app_name">Local Guide 2 Zwolle</string>
+    <!--String for subject image-->
+    <string name="subject_image">This image displays the essence of the location</string>
+    <!--String for location-->
+    <string name="location">Click on this icon to guide you to the location</string>
+    <!--String to call the location-->
+    <string name="call">Click here to make a phone call to the location</string>
+    <!--String to email the location-->
+    <string name="email">Click here to send an e-mail to the location</string>
     <!--String for Play button-->
-    <string name="play_pause">Play button</string>
+    <string name="play_pause">Play button for audio fragment</string>
 
-    <!-- TODO: Remove or change this placeholder text -->
-    <string name="hello_blank_fragment">Hello blank fragment</string>
 </resources>

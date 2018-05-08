@@ -28,25 +28,28 @@ import android.widget.TextView;
 import java.util.ArrayList;
 
 /**
- * {@link WordAdapter} is an {@link ArrayAdapter} that can provide the layout for each list item
- * based on a data source, which is a list of {@link Word} objects.
+ * {@link SubjectAdapter} is an {@link ArrayAdapter} that can provide the layout for each list item
+ * based on a data source, which is a list of {@link Subject} objects.
  */
-public class WordAdapter extends ArrayAdapter<Word> {
+public class SubjectAdapter extends ArrayAdapter<Subject> {
 
     /**
-     * Resource ID for the background color for this list of words
+     * Resource ID for the background color for this list of subjects
      */
-//    private static final String LOG_TAG = WordAdapter.class.getSimpleName();
+//    private static final String LOG_TAG = SubjectAdapter.class.getSimpleName();
     private int backgroundColor = R.color.tan_background;
 
+    private AbstractSubjectFragment abstractSubjectFragment;
+
     /**
-     * Create a new {@link WordAdapter} object.
+     * Create a new {@link SubjectAdapter} object.
      *
      * @param context is the current context (i.e. Activity) that the adapter is being created in.
-     * @param words   is the list of {@link Word}s to be displayed.
+     * @param subjects   is the list of {@link Subject}s to be displayed.
      */
-    public WordAdapter(Activity context, ArrayList<Word> words) {
-        super(context, 0, words);
+    public SubjectAdapter(Activity context, ArrayList<Subject> subjects, AbstractSubjectFragment abstractSubjectFragment) {
+        super(context, 0, subjects);
+        this.abstractSubjectFragment = abstractSubjectFragment;
     }
 
     public void setBackgroundColor(int color) {
@@ -65,26 +68,32 @@ public class WordAdapter extends ArrayAdapter<Word> {
         listViewItem.setBackgroundColor(ContextCompat.getColor(getContext(), backgroundColor));
 
 
-        // Get the {@link Word} object located at this position in the list
-        Word currentWord = getItem(position);
+        // Get the {@link Subject} object located at this position in the list
+        Subject currentSubject = getItem(position);
 
         // Find the TextViews & ImageView in the list_item.xml layout with the ID
         // description_text_view.
         TextView descriptionTextView = listViewItem.findViewById(R.id.description_text_view);
         TextView touristicTextView = listViewItem.findViewById(R.id.touristic_text_view);
+        TextView addressTextView = listViewItem.findViewById(R.id.address_text_view);
+        TextView phoneTextView = listViewItem.findViewById(R.id.phone_text_view);
+        TextView emailTextView = listViewItem.findViewById(R.id.email_text_view);
         ImageView imageView = listViewItem.findViewById(R.id.image);
 
-        // Get the Object Description word & the translation from the currentWord object and set
+        // Get the Object Description subject & the translation from the currentSubject object and set
         // this
         // text on
         // the Object Description TextView.
-        descriptionTextView.setText(currentWord.getObjectDescription());
-        touristicTextView.setText(currentWord.getTouristicObject());
+        descriptionTextView.setText(currentSubject.getObjectDescription());
+        touristicTextView.setText(currentSubject.getTouristicObject());
+        addressTextView.setText(currentSubject.getAddressInfo());
+        phoneTextView.setText(currentSubject.getPhoneInfo());
+        emailTextView.setText(currentSubject.getEmailInfo());
 
-        // Check if an image is provided for this word or not
-        if (currentWord.hasImage()) {
+        // Check if an image is provided for this subject or not
+        if (currentSubject.hasImage()) {
             // If an image is available, display the provided image based on the resource ID
-            imageView.setImageResource(currentWord.getImageResourceId());
+            imageView.setImageResource(currentSubject.getImageResourceId());
             // Make sure the view is visible
             imageView.setVisibility(View.VISIBLE);
         } else {
@@ -99,8 +108,11 @@ public class WordAdapter extends ArrayAdapter<Word> {
         // Set the background color of the text container View
         textContainer.setBackgroundColor(color);
 
+        abstractSubjectFragment.setListenerForViewAudio(listViewItem, currentSubject.getAudioResourceId
+                ());
         // Return the whole list item layout (containing 2 TextViews) so that it can be shown in
         // the ListView.
         return listViewItem;
     }
+
 }

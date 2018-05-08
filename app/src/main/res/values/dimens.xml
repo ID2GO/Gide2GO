@@ -16,7 +16,7 @@
     <!-- Height of each list item -->
     <dimen name="image_width">400dp</dimen>
     <dimen name="image_height">300dp</dimen>
-    <dimen name="list_item_height">100dp</dimen>
+    <dimen name="list_item_height">150dp</dimen>
     <!-- Max width of the tabs & slider -->
     <dimen name="tab_max_width">88dp</dimen>
     <!-- Default screen margins, per the Android Design guidelines. -->
