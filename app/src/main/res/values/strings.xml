@@ -12,9 +12,10 @@
      See the License for the specific language governing permissions and
      limitations under the License.
 -->
-<resources>
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
     <!-- Title for the application. [CHAR LIMIT=12] -->
     <string name="app_name">Local Guide 2 Zwolle</string>
+    <string name="example">example text</string>
     <!--String for subject image-->
     <string name="subject_image">This image displays the essence of the location</string>
     <!--String for location-->
@@ -26,4 +27,20 @@
     <!--String for Play button-->
     <string name="play_pause">Play button for audio fragment</string>
 
+    <string name="liberation_festival">Liberation Festival Overijssel</string>
+    <string name="liberation_festival_description">Festival Overijssel Zwolle\n
+                        "Every May 5th the largest liberation festival in the Netherlands happens
+        in Zwolle with more than 50 performances and more than 130,000 visitors.\n
+        The festival on May 5th. with various venues, more than dozens of performances,
+        hundreds of volunteers and many substantive projects, the festival is worth a visit!\n
+        Starting at the Main Stage? Or first along the Danstheater? The choice is overwhelming. \n
+        Would you like to sing along with the famous hits like ''A Million Ways'',
+        ''Say Heaven Say Hell'' and ''Wish I Could''. This is possible, because Miss Montreal
+        will also perform again this year at the liberation festival Overijssel."</string>
+    <string name="liberation_festival_office">Office Liberation Festival Overijssel
+        \nCeintuurbaan 15 \n8022 AW Zwolle</string>\
+    <string name="liberation_festival_phone">038-4532660</string>
+    <string name="liberation_festival_email">info@bevrijdingsfestivaloverijssel.nl</string>
+    <string name="toast_example_message">You scored <xliff:g example="4"> %s</xliff:g> out of
+        4</string>
 </resources>
