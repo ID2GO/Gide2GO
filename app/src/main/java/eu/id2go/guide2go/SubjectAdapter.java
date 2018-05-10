@@ -47,7 +47,8 @@ public class SubjectAdapter extends ArrayAdapter<Subject> {
      * @param context is the current context (i.e. Activity) that the adapter is being created in.
      * @param subjects   is the list of {@link Subject}s to be displayed.
      */
-    public SubjectAdapter(Activity context, ArrayList<Subject> subjects, AbstractSubjectFragment abstractSubjectFragment) {
+    public SubjectAdapter(Activity context, ArrayList<Subject> subjects, AbstractSubjectFragment
+            abstractSubjectFragment) {
         super(context, 0, subjects);
         this.abstractSubjectFragment = abstractSubjectFragment;
     }

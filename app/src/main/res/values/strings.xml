@@ -27,20 +27,39 @@
     <!--String for Play button-->
     <string name="play_pause">Play button for audio fragment</string>
 
+    <string-array name="liberation_festival">
+        <item>Liberation Festival Overijssel</item>
+        <item>Festival Overijssel Zwolle\n
+    Every May 5th the largest liberation festival in the Netherlands happens in Zwolle with more
+            than 50 performances and more than 130,000 visitors. The festival on May 5th. with
+            various venues, more than dozens of performances, hundreds of volunteers and many
+            substantive projects, the festival is worth a visit!\n
+    Starting at the Main Stage? Or first along the Danstheater? The choice is overwhelming.\n
+    Would you like to sing along with the famous hits like ''A Million Ways'', ''Say Heaven Say
+            Hell'' and ''Wish I Could''. This is possible, because Miss Montreal will also
+            perform again this year at the liberation festival Overijssel.</item>
+        <item>Office Liberation Festival Overijssel \nCeintuurbaan 15 \n8022 AW Zwolle</item>
+        <item>038-4532660</item>
+        <item>info@bevrijdingsfestivaloverijssel.nl</item>
+    </string-array>
     <string name="liberation_festival">Liberation Festival Overijssel</string>
     <string name="liberation_festival_description">Festival Overijssel Zwolle\n
-                        "Every May 5th the largest liberation festival in the Netherlands happens
-        in Zwolle with more than 50 performances and more than 130,000 visitors.\n
+        Every May 5th the largest liberation festival in the Netherlands happens
+        in Zwolle with more than 50 performances and more than 130,000 visitors.
         The festival on May 5th. with various venues, more than dozens of performances,
         hundreds of volunteers and many substantive projects, the festival is worth a visit!\n
-        Starting at the Main Stage? Or first along the Danstheater? The choice is overwhelming. \n
+        Starting at the Main Stage? Or first along the Danstheater? The choice is overwhelming.\n
         Would you like to sing along with the famous hits like ''A Million Ways'',
         ''Say Heaven Say Hell'' and ''Wish I Could''. This is possible, because Miss Montreal
-        will also perform again this year at the liberation festival Overijssel."</string>
+        will also perform again this year at the liberation festival Overijssel.</string>
     <string name="liberation_festival_office">Office Liberation Festival Overijssel
-        \nCeintuurbaan 15 \n8022 AW Zwolle</string>\
+        \nCeintuurbaan 15 \n8022 AW Zwolle</string>
+
     <string name="liberation_festival_phone">038-4532660</string>
     <string name="liberation_festival_email">info@bevrijdingsfestivaloverijssel.nl</string>
     <string name="toast_example_message">You scored <xliff:g example="4"> %s</xliff:g> out of
         4</string>
+
+    <string name="tab_festivity">Festivity</string>
 </resources>
+

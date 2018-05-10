@@ -54,8 +54,7 @@ public class Subject {
      * @param objectDescription is the subject in the subject array list
      */
     public Subject(String touristicObject, String objectDescription, String addressInfo, String
-            phoneInfo,
-                   String emailInfo, int audioResourceId) {
+            phoneInfo, String emailInfo, int audioResourceId) {
         mTouristicObject = touristicObject;
         mObjectDescription = objectDescription;
         mAddressInfo = addressInfo;

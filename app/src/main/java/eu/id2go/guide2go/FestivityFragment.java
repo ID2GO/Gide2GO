@@ -1,8 +1,8 @@
 package eu.id2go.guide2go;
 
 
+import android.content.res.Resources;
 import android.support.v4.app.Fragment;
-//import java.util.ResourceBundle.getString();
 
 /**
  * A simple {@link Fragment} subclass.
@@ -15,9 +15,22 @@ public class FestivityFragment extends AbstractSubjectFragment {
 
     // Create a list of subjects
     protected void addSubject() {
-        subjects.add(new Subject(R.string.liberation_festival, R.string
-                .liberation_festival_description, R.string.liberation_festival_office,
-                R.string.liberation_festival_phone, R.string.liberation_festival_email, R
+        Resources res = getResources();
+
+//        int[] intArray = {1,2,3,4,5};
+//        String[] stringArray = {"kaas","kip","bonen"};
+//        System.out.println(stringArray[1]);
+//        System.out.println(intArray[0]);
+//        System.out.println(intArray[4]);
+        String[] strings = res.getStringArray(R.array.liberation_festival);
+        subjects.add(new Subject(res.getString(R.string.liberation_festival),
+                res.getString(R.string.liberation_festival_description),
+                res.getString(R.string.liberation_festival_office),
+                res.getString(R.string.liberation_festival_phone),
+                res.getString(R.string.liberation_festival_email),
+                R.drawable.bevrijdingsfestival_overijssel,
+                R.raw.liberation_festival_overijssel));
+        subjects.add(new Subject(strings[0], strings[1], strings[2], strings[3], strings[4], R
                 .drawable.bevrijdingsfestival_overijssel, R.raw.liberation_festival_overijssel));
 
 //        subjects.add(new Subject("Liberation Festival Overijssel",
