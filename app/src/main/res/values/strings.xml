@@ -12,9 +12,17 @@
      See the License for the specific language governing permissions and
      limitations under the License.
 -->
-<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+<resources>
     <!-- Title for the application. [CHAR LIMIT=12] -->
     <string name="app_name">Local Guide 2 Zwolle</string>
+    <string-array name="tab_fest">Festivity,</string-array>
+    <string-array name="tabs">
+        <item>Festivity</item>
+        <item>Restaurants</item>
+        <item>Museums</item>
+        <item>Shopping</item>
+    </string-array>
+
     <string name="example">example text</string>
     <!--String for subject image-->
     <string name="subject_image">This image displays the essence of the location</string>
@@ -27,39 +35,238 @@
     <!--String for Play button-->
     <string name="play_pause">Play button for audio fragment</string>
 
+
+    <!--FestivityFragments StringArrays-->
+
     <string-array name="liberation_festival">
         <item>Liberation Festival Overijssel</item>
-        <item>Festival Overijssel Zwolle\n
-    Every May 5th the largest liberation festival in the Netherlands happens in Zwolle with more
+        <item>Festival Overijssel Zwolle
+            \nEvery May 5th the largest liberation festival in the Netherlands happens in Zwolle with more
             than 50 performances and more than 130,000 visitors. The festival on May 5th. with
             various venues, more than dozens of performances, hundreds of volunteers and many
-            substantive projects, the festival is worth a visit!\n
-    Starting at the Main Stage? Or first along the Danstheater? The choice is overwhelming.\n
-    Would you like to sing along with the famous hits like ''A Million Ways'', ''Say Heaven Say
-            Hell'' and ''Wish I Could''. This is possible, because Miss Montreal will also
+            substantive projects, the festival is worth a visit!
+            \nStarting at the Main Stage? Or first along the Danstheater? The choice is overwhelming.
+            \nWould you like to sing along with the famous hits like \'\'A Million Ways\'\', \'\'Say
+            Heaven Say
+            Hell\'\' and \'\'Wish I Could\'\'. This is possible, because Miss Montreal will also
             perform again this year at the liberation festival Overijssel.</item>
         <item>Office Liberation Festival Overijssel \nCeintuurbaan 15 \n8022 AW Zwolle</item>
-        <item>038-4532660</item>
+        <item>038&#8211;4532660</item>
         <item>info@bevrijdingsfestivaloverijssel.nl</item>
     </string-array>
-    <string name="liberation_festival">Liberation Festival Overijssel</string>
-    <string name="liberation_festival_description">Festival Overijssel Zwolle\n
-        Every May 5th the largest liberation festival in the Netherlands happens
-        in Zwolle with more than 50 performances and more than 130,000 visitors.
-        The festival on May 5th. with various venues, more than dozens of performances,
-        hundreds of volunteers and many substantive projects, the festival is worth a visit!\n
-        Starting at the Main Stage? Or first along the Danstheater? The choice is overwhelming.\n
-        Would you like to sing along with the famous hits like ''A Million Ways'',
-        ''Say Heaven Say Hell'' and ''Wish I Could''. This is possible, because Miss Montreal
-        will also perform again this year at the liberation festival Overijssel.</string>
-    <string name="liberation_festival_office">Office Liberation Festival Overijssel
-        \nCeintuurbaan 15 \n8022 AW Zwolle</string>
 
-    <string name="liberation_festival_phone">038-4532660</string>
-    <string name="liberation_festival_email">info@bevrijdingsfestivaloverijssel.nl</string>
-    <string name="toast_example_message">You scored <xliff:g example="4"> %s</xliff:g> out of
-        4</string>
+    <string-array name="city_festival">
+        <item>City festival Zwolle</item>
+        <item>The City Festival is a multi-day theater festival with a varied selection of music,
+            theater, dance, opera, food and drinks in Zwolle.
+            \nThe festival transforms the Noordereiland, next to Theater De Spiegel, into a lively festival site.
+            \nMore information on the website: www.stadsfestival.nl"</item>
+        <item>Office City festival \nSpinhuisplein 14 \n8011 ZZ Zwolle</item>
+        <item>038&#8211;4288280</item>
+        <item>info@stadsfestival.nl</item>
+    </string-array>
 
-    <string name="tab_festivity">Festivity</string>
+    <string-array name="zwolle_unlimited">
+        <item>Zwolle Unlimited</item>
+        <item>At the Brothers church square Three days full of stories, street theater and
+            music. And on Sundays the Zwolle book market.
+            \nZwolle Unlimited has in recent years developed into a defining festival in the
+            field of national and international storytelling theater, and related linguistic
+            disciplines. With top international street theater and with a nice nose for music as
+            a retiring program around the stories. All this brought in the intimate, atmospheric
+            setting of the historic city center of Zwolle. No festival \'out of packages and
+            bags\', but \'prepared\' with pure, natural ingredients or: the artisan, pure art.
+            \nEntrance: via valuation afterwards. You give after every performance what it is
+            worth to you, nothing more but nothing less. You can pay with money and with festival
+            coins.</item>
+        <item>Office Zwolle Unlimited (De Verhalenboot)
+            \nPletterstraat 20
+            \n8011 VG Zwolle</item>
+        <item>06&#8211;50252300</item>
+        <item>organisatie@zwolleunlimited.nl</item>
+    </string-array>
+
+
+    <!--MuseumsFragment StringArrays-->
+
+    <string-array name="museum_the_foundation">
+        <item>Museum the Foundation</item>
+        <item>Come and see this extensive museum, it is definitely worth it!
+            \nPalace at the Blijmarkt is the location of Museum de Foundation in Zwolle.
+            \nThis neoclassical building was built between 1838 and 1841, after a design by the
+            Hague architect Eduard Louis de Coninck. It served as the Palace of Justice and later
+            hosted, among other things, the Provincial Planning Service.
+            \nIn 2004/2005 the Palace at the Blijmarkt was converted into an art museum after a
+            design by architect Gunnar Daan. Since June 2005, the Palace and the Het Nijenhuis
+            Museum have formed the Fundatie. On the ground floor there is an extensive choice
+            from the museum\'s own collection of visual art, from the late Middle Ages to the
+            present.
+            \nThis collection was mainly brought together by collector Dirk Hannema (1895-1984,
+            former director Boymans Museum in Rotterdam) and includes works by old masters such
+            as Strozzi, Vroom and Weenix, international masterpieces by Picabia, Turner, Bernini
+            and Canova and many Dutch art from, among others, Mondrian, Israel, Toorop, van der
+            Leck, Apple, Lucebert, Carter and many others. On the top floor, regularly changing
+            exhibitions are put together.</item>
+        <item>Museum the Foundation \nBlijmarkt 20 \n8011 NE Zwolle</item>
+        <item>0572&#8211;388188</item>
+        <item>info@museumdefundatie.nl</item>
+    </string-array>
+
+    <string-array name="herman_brood_experience">
+        <item>Herman Brood Experience</item>
+        <item>At the Herman Brood Experience we like to give you an insight into the legendary 
+            life of the singer and painter who died in 2001. \nPaintings, screen prints and 
+            drawings by the artist. Visitors can also look at photos and personal items such as 
+            painted guitars, clothing, painting material and even needles.
+            \nThe widow of Brood, Xandra, is involved in the project.
+            \nVisitors do not have to pay an entrance fee for the Experience, but a voluntary 
+            contribution is always welcome. In the shop you can buy paintings, screen prints, 
+            drawings and bread merchandise.</item>
+        <item>Herman Brood Experience \nBlijmarkt 21 \n8011 ND Zwolle"</item>
+        <item>06&#8211;55336540</item>
+        <item>info@hermanbroodexperience.nl</item>
+    </string-array>
+
+    <string-array name="dutch_bakery_museum">
+        <item>Dutch Bakery Museum</item>
+        <item>The Dutch Bakery museum is in Hattem, near Zwolle.
+            \nWhat a nice and delicious museum!
+            \nIn the nicest and largest bakery museum in the Netherlands there is a lot to do for
+            young and old. In the historic buildings you will find everything about the tasty
+            history of bread and pastry. Seeing, tasting, smelling and feeling are of paramount importance.
+            \nChildren can bake themselves every day during school holidays. Check our website
+            for more baking activities and packages.
+            \nWhat a nice and tasty museum!</item>
+        <item>Dutch Bakery Museum \nKerkhofstraat 13 \n8051 GG Hattem</item>
+        <item>038&#8211;4441715</item>
+        <item>info@bakkerijmuseum.nl</item>
+    </string-array>
+
+
+    <!--RestaurantsFragment StringArrays-->
+
+    <string-array name="restaurant_the_librije">
+        <item>Restaurant the Librije</item>
+        <item>Restaurant the Librije is the restaurant of star chef Jonnie and his wife Thérèse
+            \n\'We eat and drink every day, but we are happy to make this daily requirement a
+            treat for you, so that you can share our love for good food and fine wines.
+            \nWe both grew up in this environment. A world of catching pike-perch, picking
+            water-mint, searching for boletus and chanterelles and entering with small boats the duck decoy.
+            Hence, is it so strange that we have fallen in love with all those beautiful regional
+            products?
+            \nMany people call cooking with regional products our specialty, but we think
+            that we are special precisely because we do not have a specialty. When you cook and
+            serve with heart and soul, from your feeling, everything is special.
+            \nTogether with our team we explore every day the possibilities of marrying wine and
+            food into a lovely relationship. We want to let you taste the things we discover over
+            and over again, to spoil you, without a fuss.\'</item>
+        <item>Restaurant the Librije \nSpinhuisplein 1, \n8011 ZZ Zwolle</item>
+        <item>038&#8211;8530000</item>
+        <item>info@librije.com</item>
+    </string-array>
+
+    <string-array name="bistro_de_kwaak">
+        <item>Bistro de Kwaak</item>
+        <item>Welcome on board Bistro the Kwaak.
+            \nThe freighter which was launched in 1904 was given a second destination in the
+            1980s: a sailing theater ship, as many of the Kwaak still know. In the winter of 2017
+            we, Andras Schoorl and Carien van Hasselt, gave the ship a third life, Bistro De Kwaak!
+            \nWith a view to the traditional character of the ship, a comfortable ship\'s
+            compartment has been created with a maximum of 40 seats and 60 pitches. This third
+            life is dominated by surprising and pure dishes that are often slightly different
+            than normal. Prepared with passion and served with attention in and on the most
+            beautiful canal of Zwolle.</item>
+        <item>Bistro de Kwaak \nPletterstraat 22 \n8011 VG Zwolle</item>
+        <item>038&#8211;3377044</item>
+        <item>info@dekwaak.nl</item>
+    </string-array>
+
+    <string-array name="city_brewery_hettinga_beer">
+        <item>CITY BREWERY HETTINGA BEER</item>
+        <item>Hettinga Bier was founded in January 2008 by Focke Hettinga and Joyce Orsel. The
+            brewery initiative was born from the passion for enjoying a good and delicious beer.
+            Hettinga Bier is brewed in the traditional way in Zwolle with vitalized water. The
+            vitalized water has a positive influence on the taste and quality of the beer. In
+            2009 we were elected the hero of the taste for the province of Overijssel for brewing
+            regional beers.
+            \nWe brew our beer in an authentic way, ie with purely natural raw materials, without
+            filtration and pasteurization. All our beers ferment in the bottle which gives the
+            beers a full and round taste.</item>
+        <item>CITY BREWERY HETTINGA \nEsdoornstraat 3 \n(Dieze west) \n8021 WB Zwolle</item>
+        <item>038&#8211;4662902</item>
+        <item>info@hettingabier.nl</item>
+    </string-array>
+
+
+    <!--ShoppingFragment StringArrays-->
+
+    <string-array name="the_zwolle_ball_house">
+        <item>"The Zwolle Ball House"</item>
+        <item>Walk into the Zwolle Ball House and imagine yourself in grandmother\'s time with the
+            sweet scent of traditional old Dutch sweets such as polka chunks and wine balls.
+            \nThe real Zwolse Balletjes are made in the traditional way in the cellar of the
+            Zwolle Ball House. The recipe is already ancient and still secret.
+            \nIn addition, the owner, Wies Dull, is ready to answer questions about Zwolle and
+            surroundings from tourists and from residents of Zwolle and to advise all visitors to
+            their satisfaction. In addition, at this Tourist Information Point you will find city
+            maps with sights, special shopping guides, beautiful city walks and cycle routes
+            (free as well as sales material).
+            \nYou will also find many Zwolse presents in the Zwolle Ball House, such as Zwols
+            food van Zwolse retailers and sells real Zwolle art.
+            \nAll this from her passion for Zwolle: Zwolle is a city with allure and Zwolle info
+            and gifts wants to do everything to show it!</item>
+        <item>The Zwolle Ball House \nGrote Kerkplein 13 \n8011 VA Zwolle,</item>
+        <item>038&#8211;4218815</item>
+        <item>info@zwolseballetjes.nl</item>
+    </string-array>
+
+    <string-array name="waanders_in_the_brothers_church">
+        <item>Waanders in the Brothers church</item>
+        <item>Waanders In the Brothers church, more than just a book store!
+            \nWaanders int the Brothers is divided into \'worlds\'. These worlds show you the way.
+            In the worlds you will find books, but also all kinds of accessory articles that fit
+            the books on the shelf.
+            \nThe cookbooks are combined with tasteful crockery. The travel books are next to
+            carefully selected accessories for on the road. The art books are accompanied by
+            design articles. In addition to children\'s and youth literature, the children\'s
+            department also offers contemporary and imaginative toys.
+            \nWith this, Waanders In de Broeren gives a contemporary twist to the phenomenon of
+            book trade.</item>
+        <item>Waanders in the Brothers church \nAchter de Broeren 1&#8211;3 \n8011 VA Zwolle</item>
+        <item>038&#8211;4215392</item>
+        <item>info@waandersindebroeren.nl</item>
+    </string-array>
+
+    <string-array name="meinesz_bennesz">
+        <item>Meinesz and Bennesz</item>
+        <item>Meinesz and Bennesz in a bird\'s eye view
+            \nIt was in the autumn of 1994, on 15 October, that world famous Zwollenaar Ria van
+            Ommen Meinesz and Bennesz store opened at Assendorperstraat 169. Zwolle was a unique
+            store richer.
+            \nMeine Boonstra and Ben van Loo started their hobby first, on Thursday evening and
+            Saturday, with the sale of the most diverse brocante, second-hand items. When an
+            Assendorper store in wooden toys stopped, Meine and Ben took over the articles.
+            \nSoon they grew out of their jacket. After two years they moved to number 82, a bit
+            further away in the Assendorperstraat. Everything was possible, everything was sold:
+            lamps, religious statues, crates, wind chimes, handicrafts such as custom-made
+            tables, candles from a candle maker, pepper boxes from a local artist and the nicest,
+            most beautiful gift items. There was a gate of love where couples could walk under,
+            there were contests for children and Meine and Ben were always everywhere. Since
+            1997, Meine has been the solid Saint of Saints, and his love for the saintly is first
+            and foremost in the sale of saints\' images.
+            \nIn 2006 Meine and Ben opened the unique, smallest and most fun Sinterklaas Museum
+            under the building at number 82. The store turned from yellow to green to orange and
+            was used more and more efficiently. The range also changed. In 2011, Meine and Ben
+            decided to focus entirely on party items and party clothing. A supersuccess decision:
+            since then the storm has been running. Number 33, the building exactly opposite
+            number 82, is full of the most diverse party clothes, from carnival costumes to
+            lederhosen. If you want to be in the party mood, you should pay a visit to Meinesz and
+            Bennesz. For fun and fun!</item>
+        <item>Meinesz and Bennesz \nAssendorperstraat 82 en 33 \n8012 CB Zwolle</item>
+        <item>038&#8211;4211399</item>
+        <item>meineszbennesz@planet.nl</item>
+    </string-array>
+
+
 </resources>
 

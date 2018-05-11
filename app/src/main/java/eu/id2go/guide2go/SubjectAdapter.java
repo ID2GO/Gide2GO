@@ -44,8 +44,8 @@ public class SubjectAdapter extends ArrayAdapter<Subject> {
     /**
      * Create a new {@link SubjectAdapter} object.
      *
-     * @param context is the current context (i.e. Activity) that the adapter is being created in.
-     * @param subjects   is the list of {@link Subject}s to be displayed.
+     * @param context  is the current context (i.e. Activity) that the adapter is being created in.
+     * @param subjects is the list of {@link Subject}s to be displayed.
      */
     public SubjectAdapter(Activity context, ArrayList<Subject> subjects, AbstractSubjectFragment
             abstractSubjectFragment) {
@@ -109,11 +109,10 @@ public class SubjectAdapter extends ArrayAdapter<Subject> {
         // Set the background color of the text container View
         textContainer.setBackgroundColor(color);
 
-        abstractSubjectFragment.setListenerForViewAudio(listViewItem, currentSubject.getAudioResourceId
-                ());
+        abstractSubjectFragment.setListenerForViewAudio(listViewItem,
+                currentSubject.getAudioResourceId());
         // Return the whole list item layout (containing 2 TextViews) so that it can be shown in
         // the ListView.
         return listViewItem;
     }
-
 }

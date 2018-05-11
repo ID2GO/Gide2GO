@@ -16,6 +16,7 @@
 package eu.id2go.guide2go;
 
 import android.content.Context;
+import android.content.res.Resources;
 import android.support.v4.app.Fragment;
 import android.support.v4.app.FragmentManager;
 import android.support.v4.app.FragmentPagerAdapter;
@@ -25,13 +26,14 @@ import android.support.v4.app.FragmentPagerAdapter;
  * Provides the appropriate {@link Fragment} for a view pager.
  */
 public class SimpleFragmentPagerAdapter extends FragmentPagerAdapter {
-    private String[] tabTitles = new String[]{"Festivity", "Restaurants",
-            "Museums", "Shopping"};
+    private String[] tabTitles;
     private Context context;
 
     public SimpleFragmentPagerAdapter(FragmentManager fm, Context context) {
         super(fm);
         this.context = context;
+        Resources res = this.context.getResources();
+        tabTitles = res.getStringArray(R.array.tabs);
     }
 
     @Override
@@ -51,7 +53,6 @@ public class SimpleFragmentPagerAdapter extends FragmentPagerAdapter {
     public int getCount() {
         return 4;
     }
-
 
     @Override
     public CharSequence getPageTitle(int position) {

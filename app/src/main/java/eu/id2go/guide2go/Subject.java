@@ -48,6 +48,7 @@ public class Subject {
 
     /**
      * Create a new Subject object.
+     * For the case where no images are available.
      *
      * @param touristicObject   is the subject in a language that the user is already familiar with
      *                          (such as English)
@@ -76,8 +77,7 @@ public class Subject {
      *                          the subject
      */
     public Subject(String touristicObject, String objectDescription, String addressInfo, String
-            phoneInfo,
-                   String emailInfo, int imageResourceId, int audioResourceId) {
+            phoneInfo, String emailInfo, int imageResourceId, int audioResourceId) {
         mTouristicObject = touristicObject;
         mObjectDescription = objectDescription;
         mAddressInfo = addressInfo;
@@ -130,6 +130,4 @@ public class Subject {
     public int getAudioResourceId() {
         return mAudioResourceId;
     }
-
-
 }

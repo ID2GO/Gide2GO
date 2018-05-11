@@ -94,7 +94,6 @@ public abstract class AbstractSubjectFragment extends Fragment {
         // subject_list layout file.
         ListView listView = rootView.findViewById(R.id.list);
 
-
         // Make the {@link ListView} use the {@link ArrayAdapter} we created above, so that the
         // {@link ListView} will display list items for each subject in the list of subjects.
         // Do this by calling the setAdapter method on the {@link ListView} object and pass in
@@ -102,7 +101,6 @@ public abstract class AbstractSubjectFragment extends Fragment {
         listView.setAdapter(itemsAdapter);
         return rootView;
     }
-
 
     @Override
     public void onStop() {
@@ -135,9 +133,6 @@ public abstract class AbstractSubjectFragment extends Fragment {
         view.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-
-//                Log.v("NumbersActivity", "Current subject: " + subjects);
-
                 // Release the media player if it currently exists because we are about to
                 // play a different sound file
                 releaseMediaPlayer();
