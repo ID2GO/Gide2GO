@@ -74,7 +74,7 @@ public abstract class AbstractSubjectFragment extends Fragment {
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         View rootView = inflater.inflate(getFragmentId(), container, false);
-//        super.onCreate(savedInstanceState);
+
         subjects = new ArrayList<>();
         addSubject();
 
@@ -86,6 +86,7 @@ public abstract class AbstractSubjectFragment extends Fragment {
         SubjectAdapter itemsAdapter = new SubjectAdapter(getActivity(), subjects, this);
 
         mAudioManager = (AudioManager) getActivity().getSystemService(Context.AUDIO_SERVICE);
+        mAudioManager.abandonAudioFocus(mAudioFocusChange);
 
         itemsAdapter.setBackgroundColor(getBackgroundColor());
 
